@@ -15,72 +15,86 @@
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="">Главная</a>
+          <a class="site-list__link" href="">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="">фото и видео</a>
+          <a class="site-list__link" href="">фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="">Форма отзыва</a>
+          <a class="site-list__link" href="">Форма отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="">HTML academy</a>
+          <a class="site-list__link" href="">HTML academy</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="page-main">
-    <a>
-      <img class="page-main__sedona-image" src="https://via.placeholder.com/320x389" alt="Промо картинка" width="320"
-        height="389">
-    </a>
-    <h1 class="page-main__title">Фото и видео</h1>
+    <div class="page-main__sedona-image sedona-image">
+      <img class="sedona-image__image sedona-image__photo" src="https://via.placeholder.com/320x389" alt="Промо картинка" width="320" height="389">
+    </div>
+    <div class="page-main__title title">
+      <h1 class="title__main">Фото и видео</h1>
+    </div>
     <p class="page-main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
       политике и экономике.</p>
-    <ul class="page-main__foto-cards foto-cards">
-      <li class="foto-cards__item foto-card">
-        <a>
-          <picture>
-            <img class="foto-card__img" src="https://via.placeholder.com/280x280" alt="Фото 'Неродные просторы'">
-          </picture>
-        </a>
-        <p class="foto-card__title">Неродные просторы</p>
-        <p class="foto-card__author">Автор фото: Борис</p>
-        <p class="foto-card__likes">1350</p>
+    <section class="page-main__gallery gallery">
+      <ul class="gallery__list">
+        <li class="gallery__item card">
+          <a class="card__link-img" href="">
+            <img class="card__img" src="https://via.placeholder.com/280x280" alt="Фото 'Неродные просторы'">
+          </a>
+          <p class="card__title">Неродные просторы</p>
+          <p class="card__author">Автор фото: Борис</p>
+          <p class="card__likes">1350</p>
+        </li>
+        <li class="gallery__item card">
+          <a class="card__link-img" href="">
+            <img class="card__img" src="https://via.placeholder.com/280x280" alt="Фото 'Местная растительность'">
+          </a>
+          <p class="card__title">Местная растительность</p>
+          <p class="card__author">Автор фото: Сергей</p>
+          <p class="card__likes">143</p>
+        </li>
+        <li class="gallery__item card">
+          <a class="card__link-img" href="">
+            <img class="card__img" src="https://via.placeholder.com/280x280" alt="Фото 'Дорога на север'">
+          </a>
+          <p class="card__title">Дорога на север</p>
+          <p class="card__author">Автор фото: Петр</p>
+          <p class="card__likes">96</p>
+        </li>
+        <li class="gallery__item card">
+          <a class="card__link-img" href="">
+            <img class="card__img" src="https://via.placeholder.com/280x280" alt="Фото 'Мост дьявола'">
+          </a>
+          <p class="card__title">Мост дьявола</p>
+          <p class="card__author">Автор фото: Антон</p>
+          <p class="card__likes">254</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p class="page-footer__hashtag">#visitSEDONA</p>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук"></a>
       </li>
-      <li class="foto-cards__item foto-card">
-        <a>
-          <picture>
-            <img class="foto-card__img" src="https://via.placeholder.com/280x280" alt="Фото 'Местная растительность'">
-          </picture>
-        </a>
-        <p class="foto-card__title">Местная растительность</p>
-        <p class="foto-card__author">Автор фото: Сергей</p>
-        <p class="foto-card__likes">143</p>
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм"></a>
       </li>
-      <li class="foto-cards__item foto-card">
-        <a>
-          <picture>
-            <img class="foto-card__img" src="https://via.placeholder.com/280x280" alt="Фото 'Дорога на север'">
-          </picture>
-        </a>
-        <p class="foto-card__title">Дорога на север</p>
-        <p class="foto-card__author">Автор фото: Петр</p>
-        <p class="foto-card__likes">96</p>
-      </li>
-      <li class="foto-cards__item foto-card">
-        <a>
-          <picture>
-            <img class="foto-card__img" src="https://via.placeholder.com/280x280" alt="Фото 'Мост дьявола'">
-          </picture>
-        </a>
-        <p class="foto-card__title">Мост дьявола</p>
-        <p class="foto-card__author">Автор фото: Антон</p>
-        <p class="foto-card__likes">254</p>
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#" aria-label="Твиттер"></a>
       </li>
     </ul>
-  </main>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="лого HTML Academy"></a>
+    </div>
+  </footer>
 </body>
 
 </html>
