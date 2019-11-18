@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/102x83" alt="Лого" width="102" height="83">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="photo.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="http://htmlacademy.ru/">HTML academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <div class="promo promo--index">
+      <img src="https://via.placeholder.com/320x389" alt="Приветственная картинка" width="320" height="389">
+    </div>
+    <h1 class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <div class="advantages">
+      <p class="advantages__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h2 class="advantages__title">Настоящий городок</h2>
+          <p class="advantages__number">— №1 —</p>
+          <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div сlass="advantages__img-block">
+            <img src="https://via.placeholder.com/320x260" alt="Промо картинка" width="320" height="260">
+          </div>
+          <ul class="advantages__interest-list">
+            <li class="advantages__interest-item">
+              <h3 class="advantages__interest-title">Жилье</h3>
+              <p class="advantages__interest-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="advantages__interest-item">
+              <h3 class="advantages__interest-title">Сувериры</h3>
+              <p class="advantages__interest-description">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="advantages__interest-item">
+              <h3 class="advantages__interest-title">Еда</h3>
+              <p class="advantages__interest-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+        </li>
+
+        <li class="advantages__item">
+          <h2 class="advantages__title">Там есть мост дьявола</h2>
+          <p class="advantages__number">— №2 —</p>
+          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div lass="advantages__img-block">
+            <img src="https://via.placeholder.com/320x260" alt="Промо картинка" width="320" height="260">
+          </div>
+        </li>
+
+        <li class="advantages__item">
+          <h2 class="advantages__title">Небольшая площадь</h2>
+          <p class="advantages__number">— №3 —</p>
+          <p class="advantages__description">Все интересные места находятся очень близко</p>
+        </li>
+
+        <li class="advantages__item">
+          <h2 class="advantages__title">Красивая дорога</h2>
+          <p class="advantages__number"> — №4 —</p>
+          <p class="advantages__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+
+        <li class="advantages__item">
+          <h2 class="advantages__title">Мало туристов</h2>
+          <p class="advantages__number">— №5 —</p>
+          <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <p class="page-footer__hashtag">#visitSEDONA</p>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#" aria-label="Твиттер"></a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лого HTML Academy"></a>
+    </div>
+  </footer>
+</body>
+
 </html>
